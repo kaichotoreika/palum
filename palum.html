@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>Palmu 配信効率シミュレーション（完全版）</title>
+    <style>
+        body { font-family: sans-serif; padding: 20px; color: #333; }
+        table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+        th, td { border: 1px solid #ccc; padding: 10px; text-align: right; font-size: 12px; }
+        th { background-color: #f2f2f2; text-align: center; }
+        .rank-col { text-align: center; background-color: #fafafa; font-weight: bold; }
+        /* 還元率の色分け */
+        .rate-low { color: #d93025; font-weight: bold; background-color: #fff5f5; } /* 低い：赤系 */
+        .rate-mid { color: #333; } 
+        .rate-high { color: #1a73e8; font-weight: bold; background-color: #f1f7ff; } /* 高い：青系 */
+        .footer { margin-top: 20px; font-size: 12px; color: #555; line-height: 1.6; }
+        .link-section { margin-top: 15px; padding-top: 10px; border-top: 1px dashed #ccc; }
+        a { color: #1a73e8; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+
+    <h2>配信効率シミュレーション</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>ランク</th>
+                <th>配信ダイヤ（週）</th>
+                <th>A (※1)</th>
+                <th>B (※2)</th>
+                <th>還元率（A）</th>
+                <th>実質週給 (A)</th>
+                <th>還元率（B）</th>
+                <th>実質週給 (B)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td class="rank-col">SSランク</td><td>64000</td><td>527742</td><td>566795</td><td class="rate-low">32%</td><td> ¥169,548 </td><td class="rate-low">31%</td><td> ¥177,359 </td></tr>
+            <tr><td class="rank-col">Sランク</td><td>45000</td><td>293419</td><td>280760</td><td class="rate-mid">35%</td><td> ¥103,684 </td><td class="rate-high">36%</td><td> ¥101,152 </td></tr>
+            <tr><td class="rank-col">A5ランク</td><td>30000</td><td>207435</td><td>197823</td><td class="rate-mid">34%</td><td> ¥71,487 </td><td class="rate-mid">35%</td><td> ¥69,565 </td></tr>
+            <tr><td class="rank-col">A4ランク</td><td>22000</td><td>148254</td><td>150168</td><td class="rate-mid">35%</td><td> ¥51,651 </td><td class="rate-mid">35%</td><td> ¥52,034 </td></tr>
+            <tr><td class="rank-col">A3ランク</td><td>16000</td><td>110059</td><td>124235</td><td class="rate-mid">35%</td><td> ¥38,012 </td><td class="rate-mid">33%</td><td> ¥40,847 </td></tr>
+            <tr><td class="rank-col">A2ランク</td><td>12000</td><td>79707</td><td>104090</td><td class="rate-mid">35%</td><td> ¥27,941 </td><td class="rate-low">32%</td><td> ¥32,818 </td></tr>
+            <tr><td class="rank-col">A1ランク</td><td>9000</td><td>52805</td><td>72770</td><td class="rate-high">37%</td><td> ¥19,561 </td><td class="rate-low">32%</td><td> ¥23,554 </td></tr>
+            <tr><td class="rank-col">B3ランク</td><td>5000</td><td>30629</td><td>39755</td><td class="rate-high">36%</td><td> ¥11,126 </td><td class="rate-mid">33%</td><td> ¥12,951 </td></tr>
+        </tbody>
+    </table>
+
+    <div class="footer">
+        ※1 +4を2回とる形式でランクキープした際に必要なコイン数の目安<br>
+        ※2 +2を5回とる形式でランクキープした際に必要なコイン数の目安
+        
+        <div class="link-section">
+            保障ボーダーについては以下公式note参照<br>
+            <a href="https://note.com/palmu/n/nafe168ac9dd9" target="_blank">&lt;2025年10月10日(金)のボーダー更新時の保証ボーダー予測値&gt;</a>
+        </div>
+    </div>
+
+</body>
+</html>
